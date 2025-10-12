@@ -8,7 +8,7 @@ gem 'bugsnag', '~> 5.3'
 gem 'faraday'
 gem 'flipper', '0.10.2' # locked due to monkey patch
 gem 'flipper-active_record'
-gem 'flipper-ui'
+gem 'flipper-ui', '>= 0.11.0'
 gem 'loofah'
 gem 'petroglyph'
 gem 'pg'
@@ -18,9 +18,9 @@ gem 'rack-flash3', require: 'rack-flash'
 gem 'rake', '~> 10.5.0'
 gem 'redcarpet', '~> 3.1'
 gem 'rouge', '~> 2.1.0'
-gem 'sinatra', '~> 2.0.1', require: 'sinatra/base'
-gem 'sinatra-contrib', '~> 2.0.1'
-gem 'sidekiq', '~> 4.2.10'
+gem 'sinatra', '~> 4.2.0', require: 'sinatra/base'
+gem 'sinatra-contrib', '~> 4.2.0'
+gem 'sidekiq', '~> 5.0.0'
 gem 'trackler', '~> 2.2.0'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
@@ -43,7 +43,7 @@ group :test, :development do
   gem 'dotenv', require: false
   gem 'foreman', require: false
   gem 'mocha', require: false
-  gem 'rack-test', require: false
+  gem 'rack-test', '>= 0.7.0', require: false
   gem 'simplecov', require: false
   gem 'sqlite3'
   gem 'timecop', require: false
@@ -56,5 +56,5 @@ end
 
 group :test do
   gem 'launchy'
-  gem 'minitest-capybara'
+  gem 'minitest-capybara', '>= 0.9.0'
 end
