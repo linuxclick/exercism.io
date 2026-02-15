@@ -5,7 +5,7 @@ ruby '2.3.3'
 gem 'activerecord', '~> 5.1.1'
 
 gem 'bugsnag', '~> 5.3'
-gem 'faraday'
+gem 'faraday', '>= 2.14.1'
 gem 'flipper', '0.10.2' # locked due to monkey patch
 gem 'flipper-active_record'
 gem 'flipper-ui'
@@ -26,7 +26,7 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 
 # GitHub API
-gem 'octokit'
+gem 'octokit', '>= 4.23.0'
 
 # Frontend Gems
 gem 'sass'
